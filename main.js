@@ -224,7 +224,7 @@ class Wall extends Thing{
     }
     touching(otherThing)
     {
-    	var isTouching = ((otherThing.x < this.x + this.width && this.x < otherThing.x + otherThing.width && otherThing.y < this.y + this.height && this.y < otherThing.y + otherThing.height) || (otherThing.x < this.x + this.width && this.x - currentSpeed < otherThing.x + otherThing.width && otherThing.y + otherthing.yvel < this.y + this.height && this.y < otherThing.y + otherThing.height));
+    	var isTouching = ((otherThing.x < this.x + this.width && this.x < otherThing.x + otherThing.width && otherThing.y < this.y + this.height && this.y < otherThing.y + otherThing.height) || (otherThing.x < this.x + this.width && this.x - currentSpeed < otherThing.x + otherThing.width && otherThing.y + otherThing.yvel < this.y + this.height && this.y < otherThing.y + otherThing.height));
         /*if(isTouching){
         	console.log("touching");
         }
