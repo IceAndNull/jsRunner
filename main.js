@@ -256,7 +256,7 @@ class Manager{
         this.chanceperframe = this.baseChance / fps;
     }
     Update(){
-        this.chanceperframe = (this.baseChance / fps) * (resetSpeed / currentSpeed) * timescale;
+        this.chanceperframe = (this.baseChance / fps) * (resetSpeed / 10) * timescale;
         if(Math.random() <= this.chanceperframe && runner !== null){
             addThing(new Wall(Math.random()*50 + 25));
         }
